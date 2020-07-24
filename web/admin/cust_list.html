@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>客户管理</title>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript">
+        var pageindex = 1;
+        var pagecount = 0;
+        $(document).ready(function () {
+            $("#btnsearch").click(function () {
+                search();
+            });
+
+            //全选绑定事件
+            $("#ckball").click(function () {
+
+                $("input[name='ckbcustid']").prop("checked", $("#ckball").prop("checked"));
+
+                // if ($("#ckball").prop("checked")==true){
+                //     $("input[name='ckbcustid']").prop("checked",true);
+                // }else {
+                //     $("input[name='ckbcustid']").prop("checked",false);
+                // }
+            });
+            $("#btnmanydel").click(function () {
+                let len = $("input[name='ckbcustid']:checked").length;
+                if (len > 0) {
+                    let custids = [];
+                    $("input[name='ckbcustid']:checked").each(function (i) {
+                        custids[i] = $(this).val();
+                        console.log(custids[i]);
+                    });
+                    $.ajax({
+                        url: "docust",
+                        type: "post",
+                        data: {
+                            "op": "manydel",
+                            "custids": custids
+                        },
+                        dataType: "json",
+                        success: function (jsondata) {
+                            alert(jsondata.msg + jsondata.result + "条数据");
+                            location.href = "cust_list.html";
+                        }
+                    });
+                } else {
+                    alert("请至少选择一个客户");
+                }
+            });
+            //初始数据
+            search();
+        });
+
+        function search() {
+            $.ajax({
+                url: "docust",
+                type: "post",
+                data: {
+                    op: "search",
+                    pageindex: pageindex,
+                    custname: $("#custname").val()
+                },
+                dataType: "json",
+                success: function (data) {
+                    pagecount = data.pagecount;
+                    initData(data);
+                    $("input[name='ckbcustid']").click(function () {
+                        let len = $("input[name='ckbcustid']").length;
+                        let checkedlen = $("input[name='ckbcustid']:checked").length;
+                        if (len == checkedlen) {
+                            $("#ckball").prop("checked", true);
+                        } else {
+                            $("#ckball").prop("checked", false);
+                        }
+                    });
+                    initPage();
+                }
+            });
+        }
+
+        function initData(data) {
+            var datas = data.datas;
+            $("#custdatas").html("");
+            for (var i = 0; i < datas.length; i++) {
+                var cust = datas[i];
+                $("#custdatas").append(`<tr>
+
+                                            <td><input id="ckball" name="ckbcustid" type="checkbox" value="${cust.custid}"></td>
+                                            <td>${cust.custid}</td>
+                                            <td>${cust.custname}</td>
+                                            <td>${cust.contacts}</td>
+                                            <td>${cust.tel}</td>
+                                            <td>${cust.email}</td>
+                                            <td>
+                                                <a href="cust_edit.html?custid=${cust.custid}">修改</a>
+                                                <a href="javascript:delCust(${cust.custid})">删除</a>
+                                             </td>
+                                         </tr>
+                                        `);
+            }
+
+        }
+
+        function initPage() {
+            $("#custpage").html(`
+            <tr>
+             <td colspan="6">
+             ${function () {
+                if (pageindex > 1) {
+                    return `<a href="javascript:readdata(1)">首页</a>
+                    <a href="javascript:readdata(${pageindex - 1})">上一页</a>`;
+
+                } else {
+                    return "首页 上一页";
+                }
+            }()}
+              ${function () {
+                if (pageindex < pagecount) {
+                    return `<a href="javascript:readdata(${pageindex + 1})">下一页</a>
+                    <a href="javascript:readdata(${pagecount})">末页</a>`;
+
+                } else {
+                    return "下一页 末页";
+                }
+            }()}
+            </td>
+            </tr>
+            `);
+
+        }
+
+        function delCust(custid) {
+            if (confirm("是否删除？")) {
+                $.ajax({
+                    url: "docust",
+                    type: "post",
+                    data: {op: "dodel", custid: custid},
+                    dataType: "json",
+                    success: function (jsondata) {
+                        if (jsondata.result > 0) {
+                            readdata(1);
+                            console.log("结果大于一");
+                            alert(jsondata.msg);
+                        } else {
+                            alert(jsondata.msg);
+                        }
+
+                    }
+                });
+            }
+        }
+
+        function readdata(pagenum) {
+            pageindex = pagenum;
+            search();
+        }
+    </script>
+</head>
+<body>
+<input id="custname" type="text">
+<input id="btnsearch" type="button" value="查询">
+<table>
+    <thead>
+    <tr>
+        <th><input id="ckball" type="checkbox"></th>
+        <th>编号</th>
+        <th>客户名</th>
+        <th>联系人</th>
+        <th>电话</th>
+        <th>邮箱</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody id="custdatas">
+    </tbody>
+    <tfoot id="custpage">
+    </tfoot>
+</table>
+<input type="button" id="btnmanydel" value="批量删除"/>
+</body>
+</html>

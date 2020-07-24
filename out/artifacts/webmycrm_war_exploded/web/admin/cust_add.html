@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>添加客户</title>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#addbtn").click(function () {
+                if (checkAdd()) {
+                    $.ajax({
+                        url: "docust",
+                        type: "post",
+                        data: {
+                            op: "doadd",
+                            custname: $("#custname").val(),
+                            contacts: $("#contacts").val(),
+                            email: $("#email").val(),
+                            tel: $("#tel").val()
+                        },
+                        dataType: "json",
+                        success: function (jsondata) {
+                            if (jsondata.result > 0) {
+                                location.href = "cust_list.html";
+                            } else {
+                                alert(jsondata.msg);
+                            }
+                        }
+                    });
+                } else {
+                    alert("验证失败");
+
+                }
+            });
+
+        });
+
+        function checkAdd() {
+            if ($("#custname").val() == "") {
+                alert("客户名称不能为空！");
+                return false;
+            }
+            if ($("#contacts").val() == "") {
+                alert("联系人不能为空！");
+                return false;
+            }
+            if ($("#email").val() == "") {
+                alert("邮箱不能为空！");
+                return false;
+            }
+            if ($("#tel").val() == "") {
+                alert("电话不能为空！");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<form>
+    客户名称：<input id="custname" type="text"/></br>
+    联系人：<input id="contacts" type="text"/></br>
+    邮箱：<input id="email" type="email"/></br>
+    电话：<input id="tel" type="tel"/></br>
+    <input name="resetbtn" type="reset" value="重置"/>
+    <input id="addbtn" type="button" value="添加"/>
+</form>
+</body>
+</html>

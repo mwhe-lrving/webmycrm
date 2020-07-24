@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>修改客户信息</title>
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript">
+        //先获得？后面的custid
+        //用过ajax请求查询custid
+        //显示得到的客户信息
+        //点击修改ajax实现修改
+        $(document).ready(function () {
+            var custid = getCustid();
+
+            $.ajax({
+                url: "docust",
+                type: "post",
+                data: {
+                    op: "toedit",
+                    custid: custid
+                },
+                dataType: "json",
+                success: function (jsondata) {
+                    $("#custname").val(jsondata.custname);
+                    $("#contacts").val(jsondata.contacts);
+                    $("#email").val(jsondata.email);
+                    $("#tel").val(jsondata.tel);
+                    $("#custid").val(jsondata.custid);
+
+                }
+            });
+            $("#editbtn").click(function () {
+                $.ajax({
+                    url: "docust",
+                    type: "post",
+                    data: {
+                        op: "doedit",
+                        custid: $("#custid").val(),
+                        custname: $("#custname").val(),
+                        contacts: $("#contacts").val(),
+                        email: $("#email").val(),
+                        tel: $("#tel").val()
+                    },
+                    dataType: "json",
+                    success: function (jsondata) {
+                        console.log(jsondata.result);
+                        if (jsondata.result > 0) {
+                            location.href = "cust_list.html";
+                        } else {
+                            alert(jsondata.msg);
+                        }
+                    },
+                    error: function (xmlHttpRequest) {
+                        alert(xmlHttpRequest.responseText);
+                    }
+                });
+            });
+        });
+
+        function getCustid() {
+            var url = location.href;
+            var custid = url.substr(url.indexOf("=") + 1);
+            return custid;
+        }
+    </script>
+</head>
+
+<body>
+<form>
+    客户名称：<input id="custname" type="text" value=""/></br>
+    联系人：<input id="contacts" type="text" value=""/></br>
+    邮箱：<input id="email" type="email" value=""/></br>
+    电话：<input id="tel" type="tel" value=""/></br>
+    <input id="custid" type="hidden" value=""/></br>
+    <input id="resetbtn" type="reset" value="重置"/>
+    <input id="editbtn" type="button" value="修改"/>
+
+</form>
+</body>
+</html>

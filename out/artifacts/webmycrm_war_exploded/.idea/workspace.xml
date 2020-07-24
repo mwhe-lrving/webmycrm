@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="webmycrm:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ec61a9a-e0a2-474c-8726-d77ac548d2a4" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="webmycrm" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1eLBaSkjxaVouIBvkcHwXodRRpd" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEAproject\webmycrm\web\WEB-INF\lib" />
+      <recent name="D:\IDEAproject\webmycrm\src\com\mycrm" />
+      <recent name="D:\IDEAproject\webmycrm\web\admin" />
+      <recent name="D:\IDEAproject\webmycrm\web\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEAproject\webmycrm\src\res" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
+    <configuration name="ReflectTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycrm.test.ReflectTest" />
+      <module name="webmycrm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycrm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycrm.test.ThreadTest" />
+      <module name="webmycrm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycrm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectTest.testMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmycrm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycrm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mycrm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mycrm.test.ReflectTest" />
+      <option name="METHOD_NAME" value="testMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectTest.testProxy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmycrm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycrm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mycrm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mycrm.test.ReflectTest" />
+      <option name="METHOD_NAME" value="testProxy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectTest.testReflect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webmycrm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycrm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mycrm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.mycrm.test.ReflectTest" />
+      <option name="METHOD_NAME" value="testReflect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.511" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 " />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="webmycrm:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_webmycrm" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52015" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="webmycrm:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThreadTest" />
+        <item itemvalue="JUnit.ReflectTest.testProxy" />
+        <item itemvalue="JUnit.ReflectTest.testMethod" />
+        <item itemvalue="JUnit.ReflectTest.testReflect" />
+        <item itemvalue="Application.ReflectTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.24795082" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="运行" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ec61a9a-e0a2-474c-8726-d77ac548d2a4" name="默认更改列表" comment="" />
+      <created>1594091056022</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594091056022</updated>
+      <workItem from="1594091061226" duration="11990000" />
+      <workItem from="1594180115952" duration="21420000" />
+      <workItem from="1594290216871" duration="13916000" />
+      <workItem from="1594384913325" duration="12327000" />
+      <workItem from="1594435342120" duration="7015000" />
+      <workItem from="1594550166615" duration="59000" />
+      <workItem from="1594601706594" duration="13249000" />
+      <workItem from="1594732251958" duration="7778000" />
+      <workItem from="1594810581236" duration="16789000" />
+      <workItem from="1594856163361" duration="9556000" />
+      <workItem from="1594902636547" duration="7662000" />
+      <workItem from="1594947563327" duration="15660000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Console" timestamp="1594651855081">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Console/0.0.1536.824@0.0.1536.824" timestamp="1594651855081" />
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1594957457089">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594957457089" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594860953127">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1594860953127" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1594906121156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594906121156" />
+    <state x="389" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1594102666622">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="389" y="90" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1594102666622" />
+    <state x="360" y="70" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1594108082673">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="70" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1594108082673" />
+    <state x="498" y="166" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1594860950859">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="166" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594860950859" />
+    <state x="360" y="70" key="#项目结构" timestamp="1594860952157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="70" key="#项目结构/0.0.1536.824@0.0.1536.824" timestamp="1594860952157" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1594651867358">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1594651867358" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1594914112738">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594914112738" />
+    <state width="1100" height="263" key="GridCell.Tab.0.bottom" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.0.center" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.0.left" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.0.right" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.1.bottom" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.1.center" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.1.left" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.1.right" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.2.bottom" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.2.center" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.2.left" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="263" key="GridCell.Tab.2.right" timestamp="1594969183852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="263" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1594969183852" />
+    <state width="1100" height="141" key="GridCell.Tab.3.bottom" timestamp="1594810676334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594810676334" />
+    <state width="1100" height="141" key="GridCell.Tab.3.center" timestamp="1594810676334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1594810676334" />
+    <state width="1100" height="141" key="GridCell.Tab.3.left" timestamp="1594810676333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1594810676333" />
+    <state width="1100" height="141" key="GridCell.Tab.3.right" timestamp="1594810676334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1594810676334" />
+    <state width="1100" height="141" key="GridCell.Tab.4.bottom" timestamp="1594810675656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594810675656" />
+    <state width="1100" height="141" key="GridCell.Tab.4.center" timestamp="1594810675656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1594810675656" />
+    <state width="1100" height="141" key="GridCell.Tab.4.left" timestamp="1594810675656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1594810675656" />
+    <state width="1100" height="141" key="GridCell.Tab.4.right" timestamp="1594810675656">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1100" height="141" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1594810675656" />
+    <state x="287" y="12" width="739" height="738" key="SettingsEditor" timestamp="1594903384063">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="287" y="12" width="739" height="738" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594903384063" />
+    <state x="786" y="190" key="run.anything.popup" timestamp="1594965225840">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="786" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594965225840" />
+    <state x="864" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1594304631544">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="864" y="258" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594304631544" />
+  </component>
+</project>
